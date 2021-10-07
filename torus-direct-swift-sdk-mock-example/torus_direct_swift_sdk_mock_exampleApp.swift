@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import TorusSwiftDirectSDK
+
 
 @main
 struct torus_direct_swift_sdk_mock_exampleApp: App {
+    @UIApplicationDelegateAdaptor var delegate: AppDelegate
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+        
     }
 }
