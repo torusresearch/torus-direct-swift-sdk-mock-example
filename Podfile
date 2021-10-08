@@ -8,6 +8,8 @@ target 'torus-direct-swift-sdk-mock-example' do
   # Pods for torus-direct-swift-sdk-mock-example
   pod 'atlantis-proxyman'
   pod 'Torus-directSDK', :git => 'https://github.com/torusresearch/torus-direct-swift-sdk.git', :tag => '1.1.1'
+  pod 'Torus-utils', :git => 'https://github.com/torusresearch/torus-utils-swift.git', :tag => '1.1.3'
+  pod 'Torus-fetchNodeDetails', :git => 'https://github.com/torusresearch/fetch-node-details-swift.git', :tag => '1.1.1'
   pod 'OHHTTPStubs/Swift' # includes the Default subspec, with support for NSURLSession & JSON, and the Swiftier API wrappers
 
   post_install do |installer|
