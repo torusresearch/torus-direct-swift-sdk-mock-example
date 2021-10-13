@@ -10,7 +10,7 @@ function convertHeaderArrayToHeaderMap(
   return headers.reduce((m, h) => ({ ...m, [h.name]: [h.value] }), {});
 }
 
-function generateStubs(har: Har): string {
+export function generateStubs(har: Har): string {
   let indexes: Array<number> = [];
   let output = har.log.entries
     .filter((entry) => {
