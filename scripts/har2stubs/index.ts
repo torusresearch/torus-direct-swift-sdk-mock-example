@@ -1,6 +1,6 @@
 import { promises as fs } from "fs";
 import { program } from "commander";
-import { generateStubs } from "generate";
+import { generateStubs } from "./generate";
 import { Har } from "har-format";
 
 async function main() {
