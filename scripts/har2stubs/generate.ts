@@ -7,7 +7,31 @@ import { URL } from "url";
 function convertHeaderArrayToHeaderMap(
   headers: Array<Header>
 ): Record<string, string> {
-  return headers.reduce((m, h) => ({ ...m, [h.name]: [h.value] }), {});
+  return headers.reduce((m, h) => ({ ...m, [h.name]: h.value }), {});
+}
+
+const blacklistedRequestHeaders: Array<string> = ["Host"]
+
+const blacklistedResponseHeaders: Array<string> = []
+
+function removeBlacklistedRequestHeaders(headerMap: Record<string, string>): Record<string, string> {
+  let ret = { ...headerMap };
+  blacklistedRequestHeaders.forEach(name => {
+    if (ret[name]) {
+      delete ret[name];
+    }
+  })
+  return ret;
+}
+
+function removeBlacklistedResponseHeaders(headerMap: Record<string, string>): Record<string, string> {
+  let ret = { ...headerMap };
+  blacklistedResponseHeaders.forEach(name => {
+    if (ret[name]) {
+      delete ret[name];
+    }
+  })
+  return ret;
 }
 
 export function generateStubs(har: Har): string {
@@ -22,7 +46,7 @@ export function generateStubs(har: Har): string {
           entry.request.method === "DELETE" ||
           entry.request.method === "HEAD" ||
           MIMEType.parse(entry.request.postData?.mimeType)?.subtype ===
-            "json") &&
+          "json") &&
         MIMEType.parse(entry.response.content?.mimeType)?.subtype === "json"
       );
     })
@@ -34,16 +58,16 @@ export function generateStubs(har: Har): string {
         requestBody: hasRequestBody
           ? JSON.parse(entry.request.postData.text)
           : {},
-        requestHeader: convertHeaderArrayToHeaderMap(entry.request.headers),
+        requestHeader: removeBlacklistedRequestHeaders(convertHeaderArrayToHeaderMap(entry.request.headers)),
         responseBody: JSON.parse(
           entry.response.content.encoding &&
             entry.response.content.encoding === "base64"
             ? Buffer.from(entry.response.content.text, "base64").toString(
-                "utf8"
-              )
+              "utf8"
+            )
             : entry.response.content.text
         ),
-        responseHeader: convertHeaderArrayToHeaderMap(entry.response.headers),
+        responseHeader: removeBlacklistedResponseHeaders(convertHeaderArrayToHeaderMap(entry.response.headers)),
         hasRequestBody,
         host: url.host,
         method: entry.request.method as templates.HTTPMethods,

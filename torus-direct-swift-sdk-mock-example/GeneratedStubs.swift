@@ -22,7 +22,7 @@ func registerStub0() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["www.googleapis.com"],"Content-Type":["application/json"],"Authorization":["Bearer ya29.a0ARrdaM_dqC_FRqClfzTGcYgM1Cdskx_dO2CHK0TVbqE9YO6qz4k7b7CnaZQ5d9Y_y9mhOA4tyNjFJxImlLWMJQi76lvqeHr7QxXru1x4Y1-J6NFQgatikzHmGnDLMM6kucJNFMraMXE63bZzsCAjF3cTvlwE"],"Accept":["application/json"]}
+{"Content-Type":"application/json","Authorization":"Bearer ya29.a0ARrdaM_dqC_FRqClfzTGcYgM1Cdskx_dO2CHK0TVbqE9YO6qz4k7b7CnaZQ5d9Y_y9mhOA4tyNjFJxImlLWMJQi76lvqeHr7QxXru1x4Y1-J6NFQgatikzHmGnDLMM6kucJNFMraMXE63bZzsCAjF3cTvlwE","Accept":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -30,7 +30,7 @@ func registerStub0() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"x-xss-protection":["0"],"Content-Type":["application/json; charset=UTF-8"],"Vary":["Origin, X-Origin, Referer"],"Alt-Svc":["h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""],"Date":["Fri, 08 Oct 2021 03:04:01 GMT"],"Cache-Control":["no-cache, no-store, max-age=0, must-revalidate"],"x-frame-options":["SAMEORIGIN"],"x-content-type-options":["nosniff"],"Content-Length":["234"],"Expires":["Mon, 01 Jan 1990 00:00:00 GMT"],"Server":["ESF"],"Content-Encoding":["gzip"],"Pragma":["no-cache"]}
+{"x-xss-protection":"0","Content-Type":"application/json; charset=UTF-8","Vary":"Origin, X-Origin, Referer","Alt-Svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","Date":"Fri, 08 Oct 2021 03:04:01 GMT","Cache-Control":"no-cache, no-store, max-age=0, must-revalidate","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","Content-Length":"234","Expires":"Mon, 01 Jan 1990 00:00:00 GMT","Server":"ESF","Content-Encoding":"gzip","Pragma":"no-cache"}
 """#
 
     
@@ -58,7 +58,7 @@ func registerStub1() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["ropsten.infura.io"],"Accept":["application/json"],"Content-Type":["application/json"]}
+{"Accept":"application/json","Content-Type":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -66,7 +66,7 @@ func registerStub1() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Content-Type":["application/json"],"Vary":["Accept-Encoding, Origin"],"Content-Length":["102"],"Date":["Fri, 08 Oct 2021 03:04:01 GMT"]}
+{"Content-Type":"application/json","Vary":"Accept-Encoding, Origin","Content-Length":"102","Date":"Fri, 08 Oct 2021 03:04:01 GMT"}
 """#
 
     
@@ -94,7 +94,7 @@ func registerStub2() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["ropsten.infura.io"],"Content-Type":["application/json"],"Accept":["application/json"]}
+{"Content-Type":"application/json","Accept":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -102,7 +102,7 @@ func registerStub2() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Date":["Fri, 08 Oct 2021 03:04:02 GMT"],"Vary":["Accept-Encoding, Origin"],"Content-Length":["870"],"Content-Type":["application/json"]}
+{"Date":"Fri, 08 Oct 2021 03:04:02 GMT","Vary":"Accept-Encoding, Origin","Content-Length":"870","Content-Type":"application/json"}
 """#
 
     
@@ -130,7 +130,7 @@ func registerStub3() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["ropsten.infura.io"],"Content-Type":["application/json"],"Accept":["application/json"]}
+{"Content-Type":"application/json","Accept":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -138,7 +138,7 @@ func registerStub3() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Content-Length":["678"],"Content-Type":["application/json"],"Date":["Fri, 08 Oct 2021 03:04:02 GMT"],"Vary":["Accept-Encoding, Origin"]}
+{"Content-Length":"678","Content-Type":"application/json","Date":"Fri, 08 Oct 2021 03:04:02 GMT","Vary":"Accept-Encoding, Origin"}
 """#
 
     
@@ -166,7 +166,7 @@ func registerStub4() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["ropsten.infura.io"],"Accept":["application/json"],"Content-Type":["application/json"]}
+{"Accept":"application/json","Content-Type":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -174,7 +174,7 @@ func registerStub4() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Content-Type":["application/json"],"Vary":["Accept-Encoding, Origin"],"Content-Length":["678"],"Date":["Fri, 08 Oct 2021 03:04:02 GMT"]}
+{"Content-Type":"application/json","Vary":"Accept-Encoding, Origin","Content-Length":"678","Date":"Fri, 08 Oct 2021 03:04:02 GMT"}
 """#
 
     
@@ -202,7 +202,7 @@ func registerStub5() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["ropsten.infura.io"],"Content-Type":["application/json"],"Accept":["application/json"]}
+{"Content-Type":"application/json","Accept":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -210,7 +210,7 @@ func registerStub5() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Date":["Fri, 08 Oct 2021 03:04:02 GMT"],"Vary":["Accept-Encoding, Origin"],"Content-Length":["678"],"Content-Type":["application/json"]}
+{"Date":"Fri, 08 Oct 2021 03:04:02 GMT","Vary":"Accept-Encoding, Origin","Content-Length":"678","Content-Type":"application/json"}
 """#
 
     
@@ -238,7 +238,7 @@ func registerStub6() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["ropsten.infura.io"],"Accept":["application/json"],"Content-Type":["application/json"]}
+{"Accept":"application/json","Content-Type":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -246,7 +246,7 @@ func registerStub6() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Content-Type":["application/json"],"Vary":["Accept-Encoding, Origin"],"Content-Length":["678"],"Date":["Fri, 08 Oct 2021 03:04:02 GMT"]}
+{"Content-Type":"application/json","Vary":"Accept-Encoding, Origin","Content-Length":"678","Date":"Fri, 08 Oct 2021 03:04:02 GMT"}
 """#
 
     
@@ -274,7 +274,7 @@ func registerStub7() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["ropsten.infura.io"],"Accept":["application/json"],"Content-Type":["application/json"]}
+{"Accept":"application/json","Content-Type":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -282,7 +282,7 @@ func registerStub7() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Vary":["Accept-Encoding, Origin"],"Content-Type":["application/json"],"Content-Length":["678"],"Date":["Fri, 08 Oct 2021 03:04:02 GMT"]}
+{"Vary":"Accept-Encoding, Origin","Content-Type":"application/json","Content-Length":"678","Date":"Fri, 08 Oct 2021 03:04:02 GMT"}
 """#
 
     
@@ -310,7 +310,7 @@ func registerStub8() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["teal-15-2.torusnode.com"],"Accept":["application/json"],"Content-Type":["application/json"]}
+{"Accept":"application/json","Content-Type":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -318,7 +318,7 @@ func registerStub8() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Content-Type":["application/json"],"Content-Length":["281"],"Vary":["Origin"],"Date":["Fri, 08 Oct 2021 03:04:03 GMT"],"Server":["nginx/1.19.9"]}
+{"Content-Type":"application/json","Content-Length":"281","Vary":"Origin","Date":"Fri, 08 Oct 2021 03:04:03 GMT","Server":"nginx/1.19.9"}
 """#
 
     
@@ -341,7 +341,7 @@ func registerStub9() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["signer.tor.us"],"Origin":["torus-direct-mock-ios"],"Content-Type":["application/json"],"x-api-key":["torus-default"],"Accept":["application/json"]}
+{"Origin":"torus-direct-mock-ios","Content-Type":"application/json","x-api-key":"torus-default","Accept":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -349,7 +349,7 @@ func registerStub9() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Date":["Fri, 08 Oct 2021 03:04:03 GMT"],"access-control-allow-methods":["GET,OPTIONS"],"access-control-allow-headers":["pubkeyx,pubkeyy,x-api-key,x-embed-host,content-type,authorization,verifier,verifier_id"],"Content-Type":["application/json"],"Access-Control-Allow-Origin":["*"],"Content-Length":["16"],"access-control-max-age":["86400"]}
+{"Date":"Fri, 08 Oct 2021 03:04:03 GMT","access-control-allow-methods":"GET,OPTIONS","access-control-allow-headers":"pubkeyx,pubkeyy,x-api-key,x-embed-host,content-type,authorization,verifier,verifier_id","Content-Type":"application/json","Access-Control-Allow-Origin":"*","Content-Length":"16","access-control-max-age":"86400"}
 """#
 
     
@@ -377,7 +377,7 @@ func registerStub10() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["teal-15-3.torusnode.com"],"Content-Type":["application/json"],"Accept":["application/json"]}
+{"Content-Type":"application/json","Accept":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -385,7 +385,7 @@ func registerStub10() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Vary":["Origin"],"Content-Length":["281"],"Content-Type":["application/json"],"Date":["Fri, 08 Oct 2021 03:04:03 GMT"],"Server":["nginx/1.19.9"]}
+{"Vary":"Origin","Content-Length":"281","Content-Type":"application/json","Date":"Fri, 08 Oct 2021 03:04:03 GMT","Server":"nginx/1.19.9"}
 """#
 
     
@@ -413,7 +413,7 @@ func registerStub11() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["teal-15-1.torusnode.com"],"Accept":["application/json"],"Content-Type":["application/json"]}
+{"Accept":"application/json","Content-Type":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -421,7 +421,7 @@ func registerStub11() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Vary":["Origin"],"Date":["Fri, 08 Oct 2021 03:04:03 GMT"],"Content-Length":["281"],"Server":["nginx/1.19.9"],"Content-Type":["application/json"]}
+{"Vary":"Origin","Date":"Fri, 08 Oct 2021 03:04:03 GMT","Content-Length":"281","Server":"nginx/1.19.9","Content-Type":"application/json"}
 """#
 
     
@@ -449,7 +449,7 @@ func registerStub12() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["teal-15-4.torusnode.com"],"Content-Type":["application/json"],"Accept":["application/json"]}
+{"Content-Type":"application/json","Accept":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -457,7 +457,7 @@ func registerStub12() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Server":["nginx/1.19.9"],"Content-Length":["281"],"Content-Type":["application/json"],"Vary":["Origin"],"Date":["Fri, 08 Oct 2021 03:04:03 GMT"]}
+{"Server":"nginx/1.19.9","Content-Length":"281","Content-Type":"application/json","Vary":"Origin","Date":"Fri, 08 Oct 2021 03:04:03 GMT"}
 """#
 
     
@@ -485,7 +485,7 @@ func registerStub13() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["metadata.tor.us"],"Content-Type":["application/json"],"Accept":["application/json"]}
+{"Content-Type":"application/json","Accept":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -493,7 +493,7 @@ func registerStub13() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"x-dns-prefetch-control":["off"],"x-content-type-options":["nosniff"],"Vary":["Origin, Accept-Encoding"],"Date":["Fri, 08 Oct 2021 03:04:04 GMT"],"x-xss-protection":["0"],"Strict-Transport-Security":["max-age=15552000; includeSubDomains"],"x-download-options":["noopen"],"referrer-policy":["no-referrer"],"content-security-policy":["default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"],"x-frame-options":["SAMEORIGIN"],"Content-Type":["application/json; charset=utf-8"],"Etag":["W/\"e-JWOqSwGs6lhRJiUZe/mVb6Mua74\""],"expect-ct":["max-age=0"],"Content-Length":["14"],"x-permitted-cross-domain-policies":["none"]}
+{"x-dns-prefetch-control":"off","x-content-type-options":"nosniff","Vary":"Origin, Accept-Encoding","Date":"Fri, 08 Oct 2021 03:04:04 GMT","x-xss-protection":"0","Strict-Transport-Security":"max-age=15552000; includeSubDomains","x-download-options":"noopen","referrer-policy":"no-referrer","content-security-policy":"default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests","x-frame-options":"SAMEORIGIN","Content-Type":"application/json; charset=utf-8","Etag":"W/\"e-JWOqSwGs6lhRJiUZe/mVb6Mua74\"","expect-ct":"max-age=0","Content-Length":"14","x-permitted-cross-domain-policies":"none"}
 """#
 
     
@@ -521,7 +521,7 @@ func registerStub14() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["teal-15-2.torusnode.com"],"Content-Type":["application/json"],"Accept":["application/json"]}
+{"Content-Type":"application/json","Accept":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -529,7 +529,7 @@ func registerStub14() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Date":["Fri, 08 Oct 2021 03:04:04 GMT"],"Content-Type":["application/json"],"Server":["nginx/1.19.9"],"Vary":["Origin"],"Content-Length":["606"]}
+{"Date":"Fri, 08 Oct 2021 03:04:04 GMT","Content-Type":"application/json","Server":"nginx/1.19.9","Vary":"Origin","Content-Length":"606"}
 """#
 
     
@@ -557,7 +557,7 @@ func registerStub15() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["teal-15-3.torusnode.com"],"Content-Type":["application/json"],"Accept":["application/json"]}
+{"Content-Type":"application/json","Accept":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -565,7 +565,7 @@ func registerStub15() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Date":["Fri, 08 Oct 2021 03:04:04 GMT"],"Vary":["Origin"],"Content-Length":["606"],"Server":["nginx/1.19.9"],"Content-Type":["application/json"]}
+{"Date":"Fri, 08 Oct 2021 03:04:04 GMT","Vary":"Origin","Content-Length":"606","Server":"nginx/1.19.9","Content-Type":"application/json"}
 """#
 
     
@@ -593,7 +593,7 @@ func registerStub16() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["teal-15-1.torusnode.com"],"Accept":["application/json"],"Content-Type":["application/json"]}
+{"Accept":"application/json","Content-Type":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -601,7 +601,7 @@ func registerStub16() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Content-Length":["606"],"Server":["nginx/1.19.9"],"Content-Type":["application/json"],"Vary":["Origin"],"Date":["Fri, 08 Oct 2021 03:04:04 GMT"]}
+{"Content-Length":"606","Server":"nginx/1.19.9","Content-Type":"application/json","Vary":"Origin","Date":"Fri, 08 Oct 2021 03:04:04 GMT"}
 """#
 
     
@@ -629,7 +629,7 @@ func registerStub17() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["teal-15-4.torusnode.com"],"Content-Type":["application/json"],"Accept":["application/json"]}
+{"Content-Type":"application/json","Accept":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -637,7 +637,7 @@ func registerStub17() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Date":["Fri, 08 Oct 2021 03:04:04 GMT"],"Server":["nginx/1.19.9"],"Vary":["Origin"],"Content-Length":["606"],"Content-Type":["application/json"]}
+{"Date":"Fri, 08 Oct 2021 03:04:04 GMT","Server":"nginx/1.19.9","Vary":"Origin","Content-Length":"606","Content-Type":"application/json"}
 """#
 
     
@@ -665,7 +665,7 @@ func registerStub18() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["teal-15-5.torusnode.com"],"Accept":["application/json"],"Content-Type":["application/json"]}
+{"Accept":"application/json","Content-Type":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -673,7 +673,7 @@ func registerStub18() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Server":["nginx/1.19.9"],"Content-Type":["application/json"],"Vary":["Origin"],"Date":["Fri, 08 Oct 2021 03:04:04 GMT"],"Content-Length":["281"]}
+{"Server":"nginx/1.19.9","Content-Type":"application/json","Vary":"Origin","Date":"Fri, 08 Oct 2021 03:04:04 GMT","Content-Length":"281"}
 """#
 
     
@@ -701,7 +701,7 @@ func registerStub19() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["teal-15-5.torusnode.com"],"Content-Type":["application/json"],"Accept":["application/json"]}
+{"Content-Type":"application/json","Accept":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -709,7 +709,7 @@ func registerStub19() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Server":["nginx/1.19.9"],"Content-Type":["application/json"],"Vary":["Origin"],"Date":["Fri, 08 Oct 2021 03:04:04 GMT"],"Content-Length":["606"]}
+{"Server":"nginx/1.19.9","Content-Type":"application/json","Vary":"Origin","Date":"Fri, 08 Oct 2021 03:04:04 GMT","Content-Length":"606"}
 """#
 
     
@@ -737,7 +737,7 @@ func registerStub20() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["teal-15-3.torusnode.com"],"Accept":["application/json"],"Content-Type":["application/json"]}
+{"Accept":"application/json","Content-Type":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -745,7 +745,7 @@ func registerStub20() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Server":["nginx/1.19.9"],"Content-Length":["722"],"Content-Type":["application/json"],"Date":["Fri, 08 Oct 2021 03:04:04 GMT"],"Vary":["Origin"]}
+{"Server":"nginx/1.19.9","Content-Length":"722","Content-Type":"application/json","Date":"Fri, 08 Oct 2021 03:04:04 GMT","Vary":"Origin"}
 """#
 
     
@@ -773,7 +773,7 @@ func registerStub21() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["teal-15-2.torusnode.com"],"Content-Type":["application/json"],"Accept":["application/json"]}
+{"Content-Type":"application/json","Accept":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -781,7 +781,7 @@ func registerStub21() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Content-Length":["722"],"Vary":["Origin"],"Server":["nginx/1.19.9"],"Date":["Fri, 08 Oct 2021 03:04:04 GMT"],"Content-Type":["application/json"]}
+{"Content-Length":"722","Vary":"Origin","Server":"nginx/1.19.9","Date":"Fri, 08 Oct 2021 03:04:04 GMT","Content-Type":"application/json"}
 """#
 
     
@@ -809,7 +809,7 @@ func registerStub22() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["teal-15-1.torusnode.com"],"Accept":["application/json"],"Content-Type":["application/json"]}
+{"Accept":"application/json","Content-Type":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -817,7 +817,7 @@ func registerStub22() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Date":["Fri, 08 Oct 2021 03:04:04 GMT"],"Content-Length":["722"],"Vary":["Origin"],"Content-Type":["application/json"],"Server":["nginx/1.19.9"]}
+{"Date":"Fri, 08 Oct 2021 03:04:04 GMT","Content-Length":"722","Vary":"Origin","Content-Type":"application/json","Server":"nginx/1.19.9"}
 """#
 
     
@@ -845,7 +845,7 @@ func registerStub23() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["teal-15-4.torusnode.com"],"Accept":["application/json"],"Content-Type":["application/json"]}
+{"Accept":"application/json","Content-Type":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -853,7 +853,7 @@ func registerStub23() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Date":["Fri, 08 Oct 2021 03:04:04 GMT"],"Content-Length":["722"],"Vary":["Origin"],"Content-Type":["application/json"],"Server":["nginx/1.19.9"]}
+{"Date":"Fri, 08 Oct 2021 03:04:04 GMT","Content-Length":"722","Vary":"Origin","Content-Type":"application/json","Server":"nginx/1.19.9"}
 """#
 
     
@@ -881,7 +881,7 @@ func registerStub24() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["teal-15-5.torusnode.com"],"Accept":["application/json"],"Content-Type":["application/json"]}
+{"Accept":"application/json","Content-Type":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -889,7 +889,7 @@ func registerStub24() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"Content-Type":["application/json"],"Content-Length":["722"],"Date":["Fri, 08 Oct 2021 03:04:04 GMT"],"Server":["nginx/1.19.9"],"Vary":["Origin"]}
+{"Content-Type":"application/json","Content-Length":"722","Date":"Fri, 08 Oct 2021 03:04:04 GMT","Server":"nginx/1.19.9","Vary":"Origin"}
 """#
 
     
@@ -917,7 +917,7 @@ func registerStub25() -> HTTPStubsDescriptor {
 
     let requestHeadersStr =
 #"""
-{"Host":["metadata.tor.us"],"Accept":["application/json"],"Content-Type":["application/json"]}
+{"Accept":"application/json","Content-Type":"application/json"}
 """#
     let responseBodyStr =
 #"""
@@ -925,7 +925,7 @@ func registerStub25() -> HTTPStubsDescriptor {
 """#
     let responseHeadersStr =
 #"""
-{"expect-ct":["max-age=0"],"Etag":["W/\"e-JWOqSwGs6lhRJiUZe/mVb6Mua74\""],"referrer-policy":["no-referrer"],"Vary":["Origin, Accept-Encoding"],"Content-Length":["14"],"Strict-Transport-Security":["max-age=15552000; includeSubDomains"],"content-security-policy":["default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"],"Date":["Fri, 08 Oct 2021 03:04:04 GMT"],"x-frame-options":["SAMEORIGIN"],"x-permitted-cross-domain-policies":["none"],"x-xss-protection":["0"],"x-dns-prefetch-control":["off"],"Content-Type":["application/json; charset=utf-8"],"x-content-type-options":["nosniff"],"x-download-options":["noopen"]}
+{"expect-ct":"max-age=0","Etag":"W/\"e-JWOqSwGs6lhRJiUZe/mVb6Mua74\"","referrer-policy":"no-referrer","Vary":"Origin, Accept-Encoding","Content-Length":"14","Strict-Transport-Security":"max-age=15552000; includeSubDomains","content-security-policy":"default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests","Date":"Fri, 08 Oct 2021 03:04:04 GMT","x-frame-options":"SAMEORIGIN","x-permitted-cross-domain-policies":"none","x-xss-protection":"0","x-dns-prefetch-control":"off","Content-Type":"application/json; charset=utf-8","x-content-type-options":"nosniff","x-download-options":"noopen"}
 """#
 
     
