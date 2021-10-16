@@ -48,7 +48,7 @@ export function generateStubs(har: Har): string {
         host: url.host,
         method: entry.request.method as templates.HTTPMethods,
         path: url.pathname,
-        scheme: url.protocol,
+        scheme: url.protocol.replace(":", ""),
         statusCode: entry.response.status,
         id,
       });

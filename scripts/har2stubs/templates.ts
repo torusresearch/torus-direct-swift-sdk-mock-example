@@ -32,25 +32,25 @@ func registerStub${id.toFixed(0)}() -> HTTPStubsDescriptor {
       hasRequestBody
         ? `
     let requestBodyStr =
-    """
+    #"""
     ${JSON.stringify(requestBody)}
-    """
+    """#
 `
         : ``
     }
 
     let requestHeadersStr =
-"""
+#"""
 ${JSON.stringify(requestHeader)}
-"""
+"""#
     let responseBodyStr =
-"""
+#"""
 ${JSON.stringify(responseBody)}
-"""
+"""#
     let responseHeadersStr =
-"""
+#"""
 ${JSON.stringify(responseHeader)}
-"""
+"""#
 
     
     ${
@@ -61,7 +61,7 @@ ${JSON.stringify(responseHeader)}
     let requestHeaders = try! JSONSerialization.jsonObject(with: Data(requestHeadersStr.utf8), options:  []) as! [String: String]
     let responseHeaders = try! JSONSerialization.jsonObject(with: Data(responseHeadersStr.utf8), options:  []) as! [String: String]
     let ret = stub(condition: isHost("${host}") && isScheme("${scheme}") && isPath("${path}") && isMethod${method}() ${
-    hasRequestBody ? `` : `&& hasJsonBody(requestBody as! [AnyHashable : Any]) `
+    hasRequestBody ? `&& hasJsonBody(requestBody as! [AnyHashable : Any]) ` : ``
   }&& hasHeaders(requestHeaders)){ _ in
         return HTTPStubsResponse(
             data: Data(responseBodyStr.utf8),

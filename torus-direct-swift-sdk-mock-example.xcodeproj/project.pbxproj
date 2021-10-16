@@ -18,7 +18,7 @@
 		E479C381270D5AB200742CAD /* torus_direct_swift_sdk_mock_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479C380270D5AB200742CAD /* torus_direct_swift_sdk_mock_exampleTests.swift */; };
 		E479C38B270D5AB200742CAD /* torus_direct_swift_sdk_mock_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479C38A270D5AB200742CAD /* torus_direct_swift_sdk_mock_exampleUITests.swift */; };
 		E479C38D270D5AB200742CAD /* torus_direct_swift_sdk_mock_exampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479C38C270D5AB200742CAD /* torus_direct_swift_sdk_mock_exampleUITestsLaunchTests.swift */; };
-		E4D37E6E27102B0000A5D863 /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D37E6D27102B0000A5D863 /* Stubs.swift */; };
+		E49110E7271ABE0800D474FA /* GeneratedStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49110E6271ABE0800D474FA /* GeneratedStubs.swift */; };
 		F1E05638191E4E09DE657200 /* Pods_torus_direct_swift_sdk_mock_exampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1995E939CA66945139613F /* Pods_torus_direct_swift_sdk_mock_exampleTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +61,7 @@
 		E479C386270D5AB200742CAD /* torus-direct-swift-sdk-mock-exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "torus-direct-swift-sdk-mock-exampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E479C38A270D5AB200742CAD /* torus_direct_swift_sdk_mock_exampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = torus_direct_swift_sdk_mock_exampleUITests.swift; sourceTree = "<group>"; };
 		E479C38C270D5AB200742CAD /* torus_direct_swift_sdk_mock_exampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = torus_direct_swift_sdk_mock_exampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E4D37E6D27102B0000A5D863 /* Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
+		E49110E6271ABE0800D474FA /* GeneratedStubs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedStubs.swift; sourceTree = "<group>"; };
 		E4DE5E48270D79200066B413 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +141,7 @@
 		E479C36E270D5AB000742CAD /* torus-direct-swift-sdk-mock-example */ = {
 			isa = PBXGroup;
 			children = (
+				E49110E6271ABE0800D474FA /* GeneratedStubs.swift */,
 				E4DE5E48270D79200066B413 /* Info.plist */,
 				E479C36F270D5AB000742CAD /* torus_direct_swift_sdk_mock_exampleApp.swift */,
 				E479C371270D5AB000742CAD /* ContentView.swift */,
@@ -148,7 +149,6 @@
 				E479C375270D5AB200742CAD /* Preview Content */,
 				E47051DD270D68C600997F08 /* AppDelegate.swift */,
 				E47051DF270D697500997F08 /* SceneDelegate.swift */,
-				E4D37E6D27102B0000A5D863 /* Stubs.swift */,
 			);
 			path = "torus-direct-swift-sdk-mock-example";
 			sourceTree = "<group>";
@@ -417,10 +417,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E47051DE270D68C600997F08 /* AppDelegate.swift in Sources */,
+				E49110E7271ABE0800D474FA /* GeneratedStubs.swift in Sources */,
 				E479C372270D5AB000742CAD /* ContentView.swift in Sources */,
 				E479C370270D5AB000742CAD /* torus_direct_swift_sdk_mock_exampleApp.swift in Sources */,
 				E47051E0270D697500997F08 /* SceneDelegate.swift in Sources */,
-				E4D37E6E27102B0000A5D863 /* Stubs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
