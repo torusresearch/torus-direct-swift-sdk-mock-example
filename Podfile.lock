@@ -72,7 +72,7 @@ CHECKOUT OPTIONS:
     :commit: ce8ba6f603810486c4571e49dd0cd01b20ed920d
     :git: https://github.com/torusresearch/fetch-node-details-swift.git
   Torus-utils:
-    :commit: 6c8ab8404d03498126d1df493866b51996e61584
+    :commit: 58ac011a1df0646faefc5ad3acc20661c5c52c90
     :git: https://github.com/torusresearch/torus-utils-swift.git
 
 SPEC CHECKSUMS:
