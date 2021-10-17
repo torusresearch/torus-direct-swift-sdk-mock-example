@@ -44,6 +44,7 @@ func registerStub0() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_0"
     return ret
 }
 
@@ -80,6 +81,7 @@ func registerStub1() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_1"
     return ret
 }
 
@@ -116,6 +118,7 @@ func registerStub2() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_2"
     return ret
 }
 
@@ -152,6 +155,7 @@ func registerStub3() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_3"
     return ret
 }
 
@@ -188,6 +192,7 @@ func registerStub4() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_4"
     return ret
 }
 
@@ -224,6 +229,7 @@ func registerStub5() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_5"
     return ret
 }
 
@@ -260,6 +266,7 @@ func registerStub6() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_6"
     return ret
 }
 
@@ -296,6 +303,7 @@ func registerStub7() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_7"
     return ret
 }
 
@@ -332,6 +340,7 @@ func registerStub8() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_8"
     return ret
 }
 
@@ -363,6 +372,7 @@ func registerStub9() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_9"
     return ret
 }
 
@@ -399,6 +409,7 @@ func registerStub10() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_10"
     return ret
 }
 
@@ -435,6 +446,7 @@ func registerStub11() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_11"
     return ret
 }
 
@@ -471,6 +483,7 @@ func registerStub12() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_12"
     return ret
 }
 
@@ -507,6 +520,7 @@ func registerStub13() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_13"
     return ret
 }
 
@@ -543,6 +557,7 @@ func registerStub14() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_14"
     return ret
 }
 
@@ -579,6 +594,7 @@ func registerStub15() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_15"
     return ret
 }
 
@@ -615,6 +631,7 @@ func registerStub16() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_16"
     return ret
 }
 
@@ -651,6 +668,7 @@ func registerStub17() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_17"
     return ret
 }
 
@@ -687,6 +705,7 @@ func registerStub18() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_18"
     return ret
 }
 
@@ -723,6 +742,7 @@ func registerStub19() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_19"
     return ret
 }
 
@@ -759,6 +779,7 @@ func registerStub20() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_20"
     return ret
 }
 
@@ -795,6 +816,7 @@ func registerStub21() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_21"
     return ret
 }
 
@@ -831,6 +853,7 @@ func registerStub22() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_22"
     return ret
 }
 
@@ -867,6 +890,7 @@ func registerStub23() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_23"
     return ret
 }
 
@@ -903,6 +927,7 @@ func registerStub24() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_24"
     return ret
 }
 
@@ -939,5 +964,6 @@ func registerStub25() -> HTTPStubsDescriptor {
             headers: responseHeaders
         )
     }
+    ret.name = "stub_25"
     return ret
 }

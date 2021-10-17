@@ -69,6 +69,7 @@ ${JSON.stringify(responseHeader)}
             headers: responseHeaders
         )
     }
+    ret.name = "stub_${id.toFixed(0)}"
     return ret
 }
 `;
