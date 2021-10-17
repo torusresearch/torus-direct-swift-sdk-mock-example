@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 //        print("starting atlantis")
-//        Atlantis.start(hostName: "michaellee8-macmini.local.")
 //        Atlantis.start()
         
         let stubs = registerStubs()
@@ -27,9 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
                 }
         HTTPStubs.onStubMissing{request in
             print("[OHHTTPStubs][missing] Request to \(request.url!) is missing stubs.")
-            print("[OHHTTPStubs][missing] Request info: \(request.description), \(request.url!.host!), \(request.debugDescription), \(String(describing: request.ohhttpStubs_httpBody)), \(String(describing: request.allHTTPHeaderFields)), \(String(describing: request.httpMethod))")
-            
+            print("[OHHTTPStubs][missing] Request info: \(request.description), \(request.url!.host!), \(request.debugDescription), \(String(decoding: request.ohhttpStubs_httpBody ?? Data.init(), as: UTF8.self)), \(String(describing: request.allHTTPHeaderFields)), \(String(describing: request.httpMethod))")
+
         }
+        
+        
         return true
     }
     // MARK: UISceneSession Lifecycle
