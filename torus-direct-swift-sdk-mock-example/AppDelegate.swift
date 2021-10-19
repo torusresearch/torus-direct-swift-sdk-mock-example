@@ -7,15 +7,30 @@
 //
 
 import UIKit
-import Atlantis
+import OHHTTPStubs
+//import Atlantis
 
 class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        print("starting atlantis")
-//        Atlantis.start(hostName: "michaellee8-macmini.local.")
-        Atlantis.start()
+//        print("starting atlantis")
+//        Atlantis.start()
+        
+        let stubs = registerStubs()
+        HTTPStubs.setEnabled(true)
+        HTTPStubs.setEnabled(true, for: URLSession.shared.configuration)
+        print("Installed HTTPStubs stubs: \(HTTPStubs.allStubs())")
+        HTTPStubs.onStubActivation { (request: URLRequest, stub: HTTPStubsDescriptor, response: HTTPStubsResponse) in
+            print("[OHHTTPStubs][stubbed] Request to \(request.url!) has been stubbed with \(String(describing: stub.name)), body: \(request.ohhttpStubs_httpBody)")
+                }
+        HTTPStubs.onStubMissing{request in
+            print("[OHHTTPStubs][missing] Request to \(request.url!) is missing stubs.")
+            print("[OHHTTPStubs][missing] Request info: \(request.description), \(request.url!.host!), \(request.debugDescription), \(String(decoding: request.ohhttpStubs_httpBody ?? Data.init(), as: UTF8.self)), \(String(describing: request.allHTTPHeaderFields)), \(String(describing: request.httpMethod))")
+
+        }
+        
+        
         return true
     }
     // MARK: UISceneSession Lifecycle
